@@ -25,7 +25,7 @@ const ImagesTrimmingTool: React.FC<ImagesTrimmingToolProps> = ({
   const [isTrimmed, setIsTrimmed] = useState<boolean>(false);
 
   const clampToImageBounds = (value: number): number => {
-    const IMAGE_HEIGHT = 5000;
+    const IMAGE_HEIGHT = 500000;
     return Math.max(0, Math.min(value, IMAGE_HEIGHT));
   };
 

@@ -11,6 +11,7 @@ const ImagesTrimmingTool: React.FC<ImagesTrimmingToolProps> = ({
   activeSelectionColor = 'rgba(0, 0, 255, 0.3)',
   activeSelectionBorder = '1px solid pink'
 }: ImagesTrimmingToolProps): React.JSX.Element => {
+  
   const canvasRefs = useRef<(HTMLCanvasElement | null)[]>([]);
   const [scaledWidthRatio, setScaledWidthRatio] = useState<number>(2);
   const [trimSections, setTrimSections] = useState<TrimSection[]>([]);
